@@ -1,0 +1,75 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "SubGuard",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/list/list",
+      "style": {
+        "navigationBarTitleText": "订阅列表",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/detail/detail",
+      "style": {
+        "navigationBarTitleText": "订阅详情"
+      }
+    },
+    {
+      "path": "pages/import-text/import-text",
+      "style": {
+        "navigationBarTitleText": "文本识别"
+      }
+    },
+    {
+      "path": "pages/import-csv/import-csv",
+      "style": {
+        "navigationBarTitleText": "CSV 导入"
+      }
+    },
+    {
+      "path": "pages/stats/stats",
+      "style": {
+        "navigationBarTitleText": "支出统计",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/cancel-guide/cancel-guide",
+      "style": {
+        "navigationBarTitleText": "取消路径"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "SubGuard",
+    "navigationBarBackgroundColor": "#2563EB",
+    "backgroundColor": "#EEF6FF"
+  },
+  "tabBar": {
+    "color": "#64748B",
+    "selectedColor": "#2563EB",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "订阅"
+      },
+      {
+        "pagePath": "pages/stats/stats",
+        "text": "统计"
+      }
+    ]
+  }
+}

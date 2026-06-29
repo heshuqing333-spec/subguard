@@ -1,0 +1,32 @@
+
+.hero { padding: 36rpx 0 30rpx;
+}
+.eyebrow { display: inline-flex; height: 40rpx; padding: 0 18rpx; border-radius: 999rpx; background: #dbeafe; color: #1d4ed8; font-size: 22rpx; font-weight: 700; line-height: 40rpx;
+}
+.stats-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20rpx;
+}
+.stat-card { min-height: 160rpx;
+}
+.stat-card.main { grid-column: span 2;
+}
+.stat-label { color: #64748b; font-size: 24rpx;
+}
+.stat-value { margin-top: 20rpx; color: #0f172a; font-size: 50rpx; font-weight: 800;
+}
+.money { color: #2563eb;
+}
+.section-title { margin: 42rpx 0 20rpx; color: #0f172a; font-size: 32rpx; font-weight: 800;
+}
+.entry-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20rpx;
+}
+.entry-card { min-height: 176rpx; box-sizing: border-box;
+}
+.entry-icon { display: inline-flex; align-items: center; justify-content: center; min-width: 58rpx; height: 58rpx; padding: 0 12rpx; border-radius: 16rpx; background: #eff6ff; color: #2563eb; font-size: 22rpx; font-weight: 800;
+}
+.entry-title { margin-top: 18rpx; color: #0f172a; font-size: 30rpx; font-weight: 800;
+}
+.entry-desc { margin-top: 10rpx; color: #64748b; font-size: 24rpx; line-height: 1.4;
+}
+.loading { padding: 32rpx 0; color: #64748b; font-size: 26rpx; text-align: center;
+}
+

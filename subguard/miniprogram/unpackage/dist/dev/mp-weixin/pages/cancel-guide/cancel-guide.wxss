@@ -1,0 +1,22 @@
+
+.selector, .guide { margin-top: 28rpx;
+}
+.label { margin-bottom: 12rpx; color: #334155; font-size: 26rpx; font-weight: 700;
+}
+.picker { height: 88rpx; padding: 0 24rpx; border: 1rpx solid #bfdbfe; border-radius: 16rpx; background: #f8fbff; font-size: 28rpx; line-height: 88rpx;
+}
+.top { display: flex; justify-content: space-between; gap: 20rpx; margin-bottom: 24rpx;
+}
+.platform { font-size: 34rpx; font-weight: 800;
+}
+.method { margin-top: 8rpx; color: #64748b; font-size: 24rpx;
+}
+.tag { height: 44rpx; padding: 0 16rpx; border-radius: 999rpx; background: #dbeafe; color: #1d4ed8; font-size: 24rpx; font-weight: 800; line-height: 44rpx;
+}
+.step { display: flex; gap: 18rpx; margin-top: 18rpx; padding: 20rpx; border-radius: 16rpx; background: #f8fbff;
+}
+.num { width: 44rpx; height: 44rpx; border-radius: 999rpx; background: #2563eb; color: #fff; text-align: center; line-height: 44rpx; font-weight: 800;
+}
+.step-text { flex: 1; color: #0f172a; font-size: 28rpx; line-height: 1.5;
+}
+

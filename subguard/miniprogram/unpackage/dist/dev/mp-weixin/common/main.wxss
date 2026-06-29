@@ -1,0 +1,73 @@
+
+page {
+  min-height: 100vh;
+  background: #eef6ff;
+  color: #0f172a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+button::after {
+  border: 0;
+}
+.page {
+  min-height: 100vh;
+  padding: 32rpx 32rpx 56rpx;
+  box-sizing: border-box;
+  background: #eef6ff;
+}
+.title {
+  color: #0f172a;
+  font-size: 44rpx;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.subtitle {
+  margin-top: 12rpx;
+  color: #64748b;
+  font-size: 26rpx;
+  line-height: 1.5;
+}
+.card {
+  padding: 28rpx;
+  border: 1rpx solid #dbeafe;
+  border-radius: 16rpx;
+  background: #ffffff;
+  box-shadow: 0 10rpx 28rpx rgba(37, 99, 235, 0.06);
+}
+.primary-btn {
+  height: 82rpx;
+  border-radius: 16rpx;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 28rpx;
+  font-weight: 700;
+  line-height: 82rpx;
+}
+.secondary-btn {
+  height: 82rpx;
+  border-radius: 16rpx;
+  background: #f1f5f9;
+  color: #0f172a;
+  font-size: 28rpx;
+  font-weight: 700;
+  line-height: 82rpx;
+}
+.notice {
+  margin-top: 24rpx;
+  padding: 20rpx 24rpx;
+  border-radius: 16rpx;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 26rpx;
+  line-height: 1.5;
+}
+.empty {
+  margin-top: 32rpx;
+  padding: 40rpx 32rpx;
+  border: 1rpx solid #dbeafe;
+  border-radius: 16rpx;
+  background: #ffffff;
+  color: #64748b;
+  text-align: center;
+  box-shadow: 0 10rpx 28rpx rgba(37, 99, 235, 0.06);
+}
+
