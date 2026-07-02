@@ -66,16 +66,16 @@ export default {
 </script>
 
 <style>
-.upload, .candidate { margin-top: 28rpx; }
-.upload-title { font-size: 32rpx; font-weight: 800; }
-.upload-desc, .file-name, .meta { margin-top: 10rpx; color: #64748b; font-size: 24rpx; }
+.upload, .candidate { margin-top: 24rpx; }
+.upload-title { font-size: 30rpx; font-weight: 800; }
+.upload-desc, .file-name, .meta { margin-top: 9rpx; color: #64748b; font-size: 23rpx; line-height: 1.45; }
 .top { display: flex; justify-content: space-between; gap: 20rpx; }
-.name { font-size: 34rpx; font-weight: 800; }
-.confidence { padding: 8rpx 16rpx; border-radius: 999rpx; background: #dbeafe; color: #1d4ed8; font-weight: 800; }
-.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18rpx; margin-top: 24rpx; }
-.info, .evidence { padding: 18rpx; border-radius: 16rpx; background: #f8fbff; }
-.info text, .evidence text { color: #64748b; font-size: 22rpx; }
-.info view, .evidence view { margin-top: 8rpx; font-size: 26rpx; font-weight: 700; line-height: 1.5; }
-.evidence { margin-top: 22rpx; margin-bottom: 24rpx; }
+.name { font-size: 31rpx; font-weight: 800; line-height: 1.25; }
+.confidence { padding: 7rpx 14rpx; border-radius: 999rpx; background: #dbeafe; color: #1d4ed8; font-size: 23rpx; font-weight: 800; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14rpx; margin-top: 20rpx; }
+.info, .evidence { padding: 16rpx; border-radius: 14rpx; background: #f8fafc; }
+.info text, .evidence text { color: #64748b; font-size: 21rpx; }
+.info view, .evidence view { margin-top: 7rpx; font-size: 24rpx; font-weight: 700; line-height: 1.45; }
+.evidence { margin-top: 18rpx; margin-bottom: 20rpx; }
 .added { background: #dcfce7; color: #047857; }
 </style>

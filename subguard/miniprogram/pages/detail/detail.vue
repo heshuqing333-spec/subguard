@@ -89,10 +89,10 @@ export default {
 </script>
 
 <style>
-.form { margin-top: 28rpx; }
-.field { margin-bottom: 26rpx; }
-.field text { display: block; margin-bottom: 12rpx; color: #334155; font-size: 26rpx; font-weight: 700; }
-input, .picker, textarea { width: 100%; box-sizing: border-box; border: 1rpx solid #bfdbfe; border-radius: 16rpx; background: #f8fbff; color: #0f172a; font-size: 28rpx; }
-input, .picker { height: 88rpx; padding: 0 24rpx; line-height: 88rpx; }
-textarea { min-height: 180rpx; padding: 22rpx 24rpx; line-height: 1.5; }
+.form { margin-top: 24rpx; }
+.field { margin-bottom: 22rpx; }
+.field text { display: block; margin-bottom: 10rpx; color: #334155; font-size: 24rpx; font-weight: 700; }
+input, .picker, textarea { width: 100%; box-sizing: border-box; border: 1rpx solid #cbd5e1; border-radius: 14rpx; background: #f8fafc; color: #0f172a; font-size: 26rpx; }
+input, .picker { height: 78rpx; padding: 0 22rpx; line-height: 78rpx; }
+textarea { min-height: 160rpx; padding: 20rpx 22rpx; line-height: 1.45; }
 </style>

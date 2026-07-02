@@ -58,22 +58,22 @@ export default {
 </script>
 
 <style>
-.summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20rpx; margin-top: 28rpx; }
+.summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18rpx; margin-top: 24rpx; }
 .stat.main { grid-column: span 2; }
-.stat text { color: #64748b; font-size: 24rpx; }
-.stat view { margin-top: 18rpx; color: #2563eb; font-size: 42rpx; font-weight: 800; }
-.stat.main view { font-size: 56rpx; }
-.section-title { margin: 34rpx 0 18rpx; font-size: 32rpx; font-weight: 800; }
-.row { margin-bottom: 18rpx; }
-.row-head { display: flex; justify-content: space-between; gap: 18rpx; font-size: 28rpx; font-weight: 800; }
+.stat text { color: #64748b; font-size: 23rpx; }
+.stat view { margin-top: 15rpx; color: #2563eb; font-size: 38rpx; font-weight: 800; line-height: 1.1; }
+.stat.main view { font-size: 48rpx; }
+.section-title { margin: 32rpx 0 16rpx; font-size: 30rpx; font-weight: 800; }
+.row { margin-bottom: 16rpx; }
+.row-head { display: flex; justify-content: space-between; gap: 18rpx; font-size: 26rpx; font-weight: 800; }
 .row-head view { color: #2563eb; }
-.row-meta { margin-top: 10rpx; color: #64748b; font-size: 23rpx; }
-.bar { height: 16rpx; margin-top: 18rpx; border-radius: 999rpx; background: #dbeafe; overflow: hidden; }
+.row-meta { margin-top: 9rpx; color: #64748b; font-size: 22rpx; }
+.bar { height: 12rpx; margin-top: 16rpx; border-radius: 999rpx; background: #dbeafe; overflow: hidden; }
 .fill { height: 100%; border-radius: 999rpx; background: #2563eb; }
-.top-row { display: flex; align-items: center; gap: 20rpx; margin-bottom: 18rpx; }
-.rank { width: 52rpx; height: 52rpx; border-radius: 999rpx; background: #2563eb; color: #fff; text-align: center; line-height: 52rpx; font-weight: 800; }
+.top-row { display: flex; align-items: center; gap: 18rpx; margin-bottom: 16rpx; }
+.rank { width: 48rpx; height: 48rpx; border-radius: 999rpx; background: #2563eb; color: #fff; text-align: center; line-height: 48rpx; font-weight: 800; }
 .body { flex: 1; min-width: 0; }
-.top-name { font-size: 28rpx; font-weight: 800; }
-.meta, .cost text { display: block; margin-top: 8rpx; color: #64748b; font-size: 23rpx; }
-.cost { color: #2563eb; font-size: 28rpx; font-weight: 800; text-align: right; }
+.top-name { font-size: 26rpx; font-weight: 800; }
+.meta, .cost text { display: block; margin-top: 7rpx; color: #64748b; font-size: 22rpx; }
+.cost { color: #2563eb; font-size: 26rpx; font-weight: 800; text-align: right; }
 </style>

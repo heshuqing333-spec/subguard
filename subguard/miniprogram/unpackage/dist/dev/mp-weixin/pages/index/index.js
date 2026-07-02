@@ -142,7 +142,32 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ 5));
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -194,19 +219,22 @@ var _default = {
       monthlyExpense: '0.00',
       upcomingCount: 0,
       subscriptionCount: 0,
+      reminderVisible: false,
+      reminderItems: [],
+      reminderMoreCount: 0,
       entrances: [{
-        icon: 'List',
+        icon: '订',
         title: '订阅列表',
         desc: '查看全部订阅',
         url: '/pages/list/list',
         type: 'switchTab'
       }, {
-        icon: 'Add',
+        icon: '+',
         title: '添加订阅',
         desc: '记录新的扣费项',
         url: '/pages/detail/detail'
       }, {
-        icon: 'Text',
+        icon: '文',
         title: '文本识别',
         desc: '粘贴账单自动识别',
         url: '/pages/import-text/import-text'
@@ -216,13 +244,13 @@ var _default = {
         desc: '批量导入账单',
         url: '/pages/import-csv/import-csv'
       }, {
-        icon: 'Cost',
+        icon: '统',
         title: '支出统计',
         desc: '查看月度趋势',
         url: '/pages/stats/stats',
         type: 'switchTab'
       }, {
-        icon: 'Off',
+        icon: '关',
         title: '取消路径',
         desc: '查找关闭入口',
         url: '/pages/cancel-guide/cancel-guide'
@@ -255,10 +283,48 @@ var _default = {
         _this.monthlyExpense = money(stats ? stats.total_monthly_cost : 0);
         _this.upcomingCount = stats ? stats.upcoming_count : upcoming.length;
         _this.subscriptionCount = stats ? stats.subscription_count : active.length;
+        _this.prepareUpcomingReminder(upcoming);
       }).catch(function () {
         _this.errorMessage = '暂时无法连接后端，请确认 Flask 服务已启动。';
       }).finally(function () {
         _this.loading = false;
+      });
+    },
+    todayReminderKey: function todayReminderKey() {
+      var today = new Date();
+      var todayText = "".concat(today.getFullYear(), "-").concat(String(today.getMonth() + 1).padStart(2, '0'), "-").concat(String(today.getDate()).padStart(2, '0'));
+      return "subguard-reminder-".concat(todayText);
+    },
+    prepareUpcomingReminder: function prepareUpcomingReminder(upcoming) {
+      if (!Array.isArray(upcoming) || upcoming.length === 0 || uni.getStorageSync(this.todayReminderKey())) {
+        this.reminderVisible = false;
+        this.reminderItems = [];
+        this.reminderMoreCount = 0;
+        return;
+      }
+      this.reminderItems = upcoming.slice(0, 3).map(function (item) {
+        return _objectSpread(_objectSpread({}, item), {}, {
+          priceText: Number(item.price || 0).toFixed(2)
+        });
+      });
+      this.reminderMoreCount = Math.max(0, upcoming.length - this.reminderItems.length);
+      this.reminderVisible = true;
+    },
+    dismissUpcomingReminder: function dismissUpcomingReminder() {
+      uni.setStorageSync(this.todayReminderKey(), '1');
+      this.reminderVisible = false;
+    },
+    viewUpcomingSubscriptions: function viewUpcomingSubscriptions() {
+      var firstItem = this.reminderItems[0];
+      if (!firstItem) return;
+      this.viewUpcomingSubscription(firstItem);
+    },
+    viewUpcomingSubscription: function viewUpcomingSubscription(item) {
+      if (!item || !item.id) return;
+      uni.setStorageSync(this.todayReminderKey(), '1');
+      this.reminderVisible = false;
+      uni.navigateTo({
+        url: "/pages/detail/detail?id=".concat(item.id)
       });
     },
     go: function go(item) {

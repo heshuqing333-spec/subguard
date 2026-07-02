@@ -272,18 +272,18 @@ export default {
 .tabs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16rpx;
-  margin-top: 28rpx;
+  gap: 14rpx;
+  margin-top: 24rpx;
 }
 
 .tab {
-  height: 72rpx;
-  border-radius: 16rpx;
+  height: 66rpx;
+  border-radius: 14rpx;
   background: #ffffff;
   color: #64748b;
   text-align: center;
-  line-height: 72rpx;
-  font-size: 26rpx;
+  line-height: 66rpx;
+  font-size: 24rpx;
   font-weight: 700;
 }
 
@@ -300,49 +300,49 @@ export default {
 
 textarea {
   width: 100%;
-  min-height: 240rpx;
-  padding: 22rpx 24rpx;
+  min-height: 220rpx;
+  padding: 20rpx 22rpx;
   box-sizing: border-box;
-  border: 1rpx solid #bfdbfe;
-  border-radius: 16rpx;
-  background: #f8fbff;
-  font-size: 28rpx;
-  line-height: 1.5;
+  border: 1rpx solid #cbd5e1;
+  border-radius: 14rpx;
+  background: #f8fafc;
+  font-size: 26rpx;
+  line-height: 1.45;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 18rpx;
-  margin-top: 22rpx;
+  gap: 14rpx;
+  margin-top: 18rpx;
 }
 
 .upload-title {
   color: #0f172a;
-  font-size: 32rpx;
+  font-size: 30rpx;
   font-weight: 800;
 }
 
 .upload-desc,
 .file-name {
-  margin: 12rpx 0 22rpx;
+  margin: 10rpx 0 20rpx;
   color: #64748b;
-  font-size: 25rpx;
-  line-height: 1.5;
+  font-size: 23rpx;
+  line-height: 1.45;
 }
 
 .progress-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 36rpx;
-  padding-bottom: 36rpx;
+  padding-top: 34rpx;
+  padding-bottom: 34rpx;
 }
 
 .spinner {
-  width: 44rpx;
-  height: 44rpx;
-  border: 6rpx solid #dbeafe;
+  width: 40rpx;
+  height: 40rpx;
+  border: 5rpx solid #dbeafe;
   border-top-color: #2563eb;
   border-radius: 999rpx;
   animation: spin 0.9s linear infinite;
@@ -354,57 +354,58 @@ textarea {
 }
 
 .progress-title {
-  margin-top: 18rpx;
+  margin-top: 16rpx;
   color: #0f172a;
-  font-size: 30rpx;
+  font-size: 28rpx;
   font-weight: 800;
 }
 
 .progress-text {
-  margin-top: 10rpx;
+  margin-top: 8rpx;
   color: #64748b;
-  font-size: 24rpx;
-  line-height: 1.5;
+  font-size: 23rpx;
+  line-height: 1.45;
   text-align: center;
 }
 
 .result-head {
   display: flex;
   justify-content: space-between;
-  gap: 20rpx;
-  margin-bottom: 24rpx;
+  gap: 18rpx;
+  margin-bottom: 20rpx;
 }
 
 .result-title {
-  font-size: 34rpx;
+  font-size: 31rpx;
   font-weight: 800;
 }
 
 .result-subtitle {
-  margin-top: 8rpx;
+  margin-top: 7rpx;
   color: #64748b;
-  font-size: 24rpx;
+  font-size: 23rpx;
 }
 
 .confidence {
-  height: 44rpx;
-  padding: 0 16rpx;
+  height: 40rpx;
+  padding: 0 14rpx;
   border-radius: 999rpx;
   background: #dbeafe;
   color: #1d4ed8;
+  font-size: 22rpx;
   font-weight: 800;
-  line-height: 44rpx;
+  line-height: 40rpx;
 }
 
 .field {
-  margin-bottom: 24rpx;
+  margin-bottom: 22rpx;
 }
 
 .field text {
   display: block;
-  margin-bottom: 12rpx;
+  margin-bottom: 10rpx;
   color: #334155;
-  font-size: 26rpx;
+  font-size: 24rpx;
   font-weight: 700;
 }
 
@@ -413,42 +414,42 @@ input,
 .notes {
   width: 100%;
   box-sizing: border-box;
-  border: 1rpx solid #bfdbfe;
-  border-radius: 16rpx;
-  background: #f8fbff;
+  border: 1rpx solid #cbd5e1;
+  border-radius: 14rpx;
+  background: #f8fafc;
   color: #0f172a;
-  font-size: 28rpx;
+  font-size: 26rpx;
 }
 
 input,
 .picker {
-  height: 84rpx;
-  padding: 0 24rpx;
-  line-height: 84rpx;
+  height: 78rpx;
+  padding: 0 22rpx;
+  line-height: 78rpx;
 }
 
 .notes {
-  min-height: 140rpx;
-  padding: 20rpx 24rpx;
+  min-height: 132rpx;
+  padding: 18rpx 22rpx;
 }
 
 .raw-text {
-  margin-bottom: 24rpx;
-  padding: 20rpx;
-  border-radius: 16rpx;
-  background: #f8fbff;
+  margin-bottom: 22rpx;
+  padding: 18rpx;
+  border-radius: 14rpx;
+  background: #f8fafc;
 }
 
 .raw-title {
   color: #64748b;
-  font-size: 23rpx;
+  font-size: 22rpx;
   font-weight: 700;
 }
 
 .raw-content {
-  margin-top: 8rpx;
+  margin-top: 7rpx;
   color: #334155;
-  font-size: 24rpx;
-  line-height: 1.5;
+  font-size: 23rpx;
+  line-height: 1.45;
 }
 </style>
